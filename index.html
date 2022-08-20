@@ -69,11 +69,14 @@
               language. It is a small and lightweight language. Inside a host
               environment (for example, a web browser), JavaScript can be
               connected to the objects of its environment to provide
-              programmatic control over them. JavaScript contains a standard
-              library of objects, such as Array, Date, and Math, and a core set
-              of language elements such as operators, control structures, and
-              statements. Core JavaScript can be extended for a variety of
-              purposes by supplementing it with additional objects; for example:
+              programmatic control over them.
+            </p>
+            <p>
+              JavaScript contains a standard library of objects, such as Array,
+              Date, and Math, and a core set of language elements such as
+              operators, control structures, and statements. Core JavaScript can
+              be extended for a variety of purposes by supplementing it with
+              additional objects; for example:
             </p>
             <ul>
               <li>
@@ -154,9 +157,9 @@
               write your first "Hello world" JavaScript code:
             </p>
             <pre>
-              function greetMe(yourName) { alert("Hello " + yourName); }
-              greetMe("World");
-            </pre>
+function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");</pre
+            >
             <p>
               Select the code in the pad and hit Ctrl+R to watch it unfold in
               your browser!
@@ -228,13 +231,24 @@
               the function (or global context) within which x is declared, not
               the block, which in this case is an if statement.
             </p>
-            <pre>if (true) { var x = 5; } console.log(x); // 5</pre>
+            <pre>
+if (true) 
+{ 
+    var x = 5; 
+} 
+console.log(x); 
+// 5</pre
+            >
             <p>
               This behavior changes, when using the let declaration introduced
               in ECMAScript 2015.
             </p>
             <pre>
-if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</pre
+if (true) { 
+    let y = 5; 
+} 
+console.log(y); 
+// ReferenceError: y is not defined</pre
             >
           </div>
         </article>
@@ -284,16 +298,16 @@ function f() {
     const g = 5;
     var g;
     //statements 
-}
-            </pre>
+}</pre
+            >
             <p>
               However, object attributes are not protected, so the following
               statement is executed without problems.
             </p>
             <pre>
 const MY_OBJECT = {"key": "value"};
-MY_OBJECT.key = "otherValue";
-            </pre>
+MY_OBJECT.key = "otherValue";</pre
+            >
           </div>
         </article>
         <article class="article" id="data-types">
@@ -345,8 +359,8 @@ if (condition) {
     statement_1; 
 } else { 
     statement_2; 
-}
-            </pre>
+}</pre
+            >
             <p>
               condition can be any expression that evaluates to true or false.
               See Boolean for an explanation of what evaluates to true and
@@ -371,8 +385,8 @@ if (condition_1)
 }
 else {
     statement_last; 
-}
-            </pre>
+}</pre
+            >
             <p>
               In the case of multiple conditions only the first logical
               condition which evaluates to true will be executed. To execute
@@ -387,8 +401,8 @@ if (condition) {
 } else {
     statement_3_runs_if_condition_is_false;
     statement_4_runs_if_condition_is_false; 
-}
-            </pre>
+}</pre
+            >
             <p>
               It is advisable to not use simple assignments in a conditional
               expression, because the assignment can be confused with equality
@@ -425,8 +439,10 @@ if (condition) {
             </p>
             <p>
               To execute multiple statements, use a block statement ({ ... }) to
-              group those statements. <br />
-              Example: <br />
+              group those statements.
+            </p>
+            <p>Example:</p>
+            <p>
               The following example shows a while loop that prints the numbers
               from 1 to 10:
             </p>
@@ -437,8 +453,8 @@ while (n < 3)
 { 
     n++; 
     x += n; 
-}
-            </pre>
+}</pre
+            >
             <p>
               With each iteration, the loop increments n and adds that value to
               x. Therefore, x and n take on the following values:
@@ -480,8 +496,7 @@ while (n < 3)
 function square(number) 
 { 
     return number * number; 
-}
-                </pre
+}</pre
             >
             <p>
               The function square takes one argument, called number. The
