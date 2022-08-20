@@ -1,0 +1,71 @@
+body {
+  background-color: #fff;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2rem;
+}
+
+.navbar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navbar-heading {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 1rem;
+}
+
+.navbar-links {
+  overflow: scroll;
+  height: calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.navbar-links .navbar-link {
+  font-weight: normal;
+  font-size: 1rem;
+  color: rgb(87, 87, 87);
+  border-top: 1px solid black;
+  padding-top: 0.8rem;
+  text-transform: capitalize;
+}
+
+.navbar-link:last-of-type {
+  margin-bottom: 0.8rem;
+}
+
+.navbar-links .navbar-link a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-links .navbar-link:hover {
+  cursor: pointer;
+}
+
+.navbar-links .navbar-link a:visited {
+  color: inherit;
+}
